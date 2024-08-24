@@ -12,30 +12,29 @@
             padding: 0;
             background: linear-gradient(
                 to right,
-                rgb(16, 9, 19),    /* Darker shade on the left */
-                rgb(48, 25, 52),   /* Dark Purple-Red */
-                rgb(80, 15, 45),   /* Dark Red */
-                rgb(20, 30, 70),   /* Dark Blue */
-                rgb(8, 21, 48),    /* Very Dark Blue */
-                rgb(16, 9, 19)     /* Darker shade on the right */
+                rgb(16, 9, 19),
+                rgb(48, 25, 52),
+                rgb(80, 15, 45),
+                rgb(20, 30, 70),
+                rgb(8, 21, 48),
+                rgb(16, 9, 19)
             );
-            position: relative; /* Allows absolute positioning of the logo */
-            height: 100vh; /* Ensures body takes full viewport height */
-            overflow: hidden; /* Prevents scrollbars */
+            position: relative;
+            height: 100vh;
+            overflow: hidden;
             justify-content: center;
             align-items: center;
         }
         .logo-container {
-         
-            padding: 10px; /* Space around the logo */
-            border-bottom-right-radius: 8px; /* Rounded corner for aesthetics */
+            padding: 10px;
+            border-bottom-right-radius: 8px;
         }
         .logo {
-            max-width: 80px; /* Reduce the size of the logo */
-            height: auto; /* Maintain aspect ratio */
+            max-width: 80px;
+            height: auto;
             margin-bottom: 2px;
         }
-        .top{
+        .top {
             display: flex;
             flex-direction: row;
             align-items: center;
@@ -49,19 +48,17 @@
             border-radius: 20px;
             box-shadow: 0 0 10px rgba(0,0,0,0.1);
             box-sizing: border-box;
-            background-color: rgb(250, 250, 250); /* Light gray background for the container */
-            position: relative; 
+            background-color: rgb(250, 250, 250);
+            position: relative;
             justify-content: center;
-            align-items: center;/* Position relative for proper positioning of child elements */
+            align-items: center;
         }
         h1 {
             text-align: center;
             color: #333;
             font-size: 24px;
-            margin-top: 0; /* Remove margin top */
-        
+            margin-top: 0;
         }
-        
         .form-group {
             margin-bottom: 15px;
         }
@@ -81,14 +78,14 @@
             box-sizing: border-box;
             border: 1px solid #ccc;
             border-radius: 4px;
-            background-color: rgb(250, 250, 250); /* Light gray background for inputs and textareas */
+            background-color: rgb(250, 250, 250);
         }
         .form-group textarea {
             height: 100px;
             resize: vertical;
         }
         .form-group button {
-            background-color: rgb(229, 106, 5); /* Button color */
+            background-color: rgb(229, 106, 5);
             color: white;
             padding: 10px 15px;
             border: none;
@@ -97,13 +94,9 @@
             font-size: 16px;
             transition: background-color 0.3s;
         }
-
         .form-group button:hover {
-            background-color: rgb(204, 95, 0); 
-    /* Slightly darker on hover */
+            background-color: rgb(204, 95, 0);
         }
-      
-        /* Responsive Styles */
         @media (max-width: 768px) {
             .container {
                 padding: 15px;
@@ -111,30 +104,25 @@
                 margin-top: 10%;
                 margin-left: 10px;
                 margin-right: 10px;
-               
             }
             h1 {
                 font-size: 20px;
             }
             .form-group input, .form-group textarea {
                 padding: 8px;
-                
             }
             .form-group button {
                 font-size: 14px;
                 padding: 8px 12px;
             }
         }
-
         @media (max-width: 480px) {
             .container {
                 padding: 10px;
                 margin-left: 10px;
                 margin-right: 10px;
                 max-width: 90%;
-               
             }
-        
             h1 {
                 font-size: 18px;
             }
@@ -150,19 +138,14 @@
     </style>
 </head>
 <body>
-    <!-- Logo Container -->
-    
-
     <div class="container">
         <div class="top">
-        <h1>Project Idea Submission Form</h1>
-        <div class="logo-container">
-            <img src="logo.png" alt="IViL Logo" class="logo"> <!-- Update 'logo.png' to the path of your logo file -->
+            <h1>Project Idea Submission Form</h1>
+            <div class="logo-container">
+                <img src="logo.png" alt="IViL Logo" class="logo">
+            </div>
         </div>
-    </div>
-        <form action="/submit-proposal"   class="form" method="post">
-            
-            <!-- Student Information -->
+        <form action="/submit-proposal" class="form" method="post">
             <div class="form-group">
                 <label for="fullName" class="required">Full Name:</label>
                 <input type="text" id="fullName" name="fullName" required>
@@ -179,8 +162,6 @@
                 <label for="phone">Phone Number:</label>
                 <input type="text" id="phone" name="phone">
             </div>
-
-            <!-- Project Details -->
             <div class="form-group">
                 <label for="projectTitle" class="required">Project Title:</label>
                 <input type="text" id="projectTitle" name="projectTitle" required>
@@ -193,11 +174,11 @@
                 <label for="projectGoals" class="required">Project Goals:</label>
                 <textarea id="projectGoals" name="projectGoals" required></textarea>
             </div>
-            
             <div class="form-group">
-                <button class="button"  type="submit">Submit Proposal</button>
+                <button class="button" type="submit">Submit Proposal</button>
             </div>
         </form>
     </div>
 </body>
 </html>
+
